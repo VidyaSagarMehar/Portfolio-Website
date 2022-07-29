@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap');
+
+
+*{
+    font-family: 'Roboto', sans-serif;
+}
+:root{
+    --grey: #937979;
+    --red: #c42323;
+}
+body{
+   background-color: #242B2E;
+}
+div.navarea{
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+div.navarea span.logo{
+    margin-left: 100px;
+    width: 150px;
+}
+span.logo img{
+    width: 200px;
+}
+nav ul{
+    display: inline-block;
+}
+nav ul li{
+
+    display: flex;
+    display: inline-block;
+}
+nav ul li a{
+    margin-left: 20px;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+/* section area */
+div.headings{
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 50px;
+}
+div.headings h1{
+    font-size: 30px;
+    color: var(--red);
+
+}
+/* body part */
+
+.card {
+    margin-left: 50px;
+    width: 27%;
+    display: flex;
+    flex-direction: column;
+    /* border: 1px var(--red) solid; */
+  }
+  
+  .header {
+    height: 30%;
+    background: var(--red);
+    color: white;
+    text-align: center;
+  }
+  
+  .container {
+    /* padding: 2px 16px; */
+  }
+  span.thumbnail img{
+    width: 375px;
+  }
+                  /* buttons */
+
+  button::before {
+    transform: scaleX(0);
+    transform-origin: bottom right;
+  }
+  button:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  button::before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    inset: 0 0 0 0;
+    background: var(--red);
+    z-index: -1;
+    transition: transform 0.3s ease;
+  }
+  button {
+    padding: 10px 58px;
+    color: #fff;
+    position: relative;
+    font-size: 24px;
+    font-family: system-ui, sans-serif;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  span.comboBtn{
+    display: flex;
+  }
+  /* element areengment */
+  div.bodypart{
+         /* border: 2px solid red; */
+         display: inline-block;
+         display: flex;
+         flex-direction: row;
+         margin-top: 50px;
+         margin-left: 50px;
+      
+  }

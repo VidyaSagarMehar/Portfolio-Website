@@ -1,0 +1,88 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap');
+:root{
+    --grey: #937979;
+    --red: #c42323;
+}
+*{
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background-image: url('/image/abdul-a-0si69BeGjoI-unsplash.jpg');
+    height: 680px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #937979;
+}
+div.navarea{
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+div.navarea span.logo{
+    margin-left: 100px;
+    width: 150px;
+}
+span.logo img{
+    width: 200px;
+}
+nav ul{
+    display: inline-block;
+}
+nav ul li{
+
+    display: flex;
+    display: inline-block;
+}
+nav ul li a{
+    margin-left: 20px;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+section.sechome{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* border: 2px solid red; */
+}
+div.homeimg img{
+    margin-top: 80px;
+    margin-left: 100px;
+    width: 500px;
+}
+div.homepara{
+    margin-top: 150px;
+    margin-left: -20px;
+}
+div.homepara h4{
+    color: var(--red);
+    font-size: 22px;
+}
+div.homepara h1{
+    color: #fff;
+    font-size: 60px;
+    font-weight: 900;
+
+}
+div.homepara p{
+    font-weight: 200;
+}
+div.homepara button:hover{
+    cursor: pointer;
+}
+div.homepara button{
+
+    padding: 15px 60px;
+    color: #fff;
+    font-weight: 700;
+    background-color: var(--red);
+
+}
+div.sosite span a img{
+    width: 30px;
+    margin-left: 50px;
+}
+div.sosite{
+    margin-left: 210px;
+}
