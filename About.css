@@ -4,13 +4,13 @@
 	font-family: montserrat;
 	overflow-x: hidden;
 	width: 100%;
-	height: 100vh;
+	height: 50vh;
 	display: flex;
 	align-items: center;
-	background: #1e2134;
+	background: #0d0d0d;
 	line-height: 1.7;
 	color: #fff;
-	transform: skewY(-5deg);
+	transform: skewY(0deg);
 }
 
 .error-bg-text-container {
@@ -40,9 +40,9 @@
 }
 
 .error-span {
-	font-size: 280px;
+	font-size: 150px;
 	color: transparent;
-	-webkit-text-stroke: 2px #30442a;
+	-webkit-text-stroke: 2px #30442ab1;
 	text-transform: uppercase;
 	display: inline-block;
 	line-height: 0.75;
@@ -62,12 +62,15 @@
 }
 
 .error-h1 {
-	font-size: 90px;
-	margin: 0;
+	/* text-align: center; */
+	font-size: 30px;
+	margin-top: -20px;
+	/* margin: 0; */
 }
 
 .error-p {
 	font-size: 18px;
 	font-weight: 200;
-	margin: 0;
+	margin-top: 30px;
+	/* margin: 0; */
 }
