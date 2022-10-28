@@ -4,7 +4,7 @@ body {
 }
 
 body {
-	background-color: #000;
+	background-color: #0d1117;
 	background-size: cover;
 }
 
@@ -28,7 +28,7 @@ body {
 	transform-origin: -10vw;
 }
 .firefly::before {
-	background: black;
+	background: #0d1117;
 	opacity: 0.4;
 	animation: drift ease alternate infinite;
 }
