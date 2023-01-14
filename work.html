@@ -1,25 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | VS</title>
-    <link rel="stylesheet" href="./animate.css">
-    <link rel="stylesheet" href="./button.css">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-                dark : "#0D1117",
-            }
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | VS</title>
+  <link rel="stylesheet" href="./animate.css">
+  <link rel="stylesheet" href="./button.css">
+  <link rel="stylesheet" href="./backToTop.css">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            dark: "#0D1117",
           }
         }
       }
-    </script>
+    }
+  </script>
 </head>
+
 <body class="bg-dark">
   <!-- animation section -->
   <section>
@@ -39,203 +43,453 @@
     <div class="firefly"></div>
     <div class="firefly"></div>
   </section>
-    <!-- Nav section -->
-    <header class="text-gray-100 body-font bg-dark">
-        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-          <a href="./index.html" class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
-            <img class="w-[200px]" src="./image/logo2.png" alt="img">
-          </a>
-          <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center cursor-pointer">
-            <a class="mr-5 hover:text-gray-400" href="./index.html">Home</a>
-            <a class="mr-5 hover:text-gray-400" href="./work.html">My Work</a>
-            <a class="mr-5 hover:text-gray-400" href="https://github.com/VidyaSagarMehar" target="_blank">Github</a>
-            <a class="mr-5 hover:text-gray-400" href="./image/2.jpg" download="VS-Resume"><button type="button">Download Resume</button></a>
+  <!-- Back to top button -->
+  <button type="button" data-mdb-ripple="true" data-mdb-ripple-color="light"
+    class="inline-block p-3 bg-red-600 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-red-700 hover:shadow-lg focus:bg-red-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-red-800 active:shadow-lg transition duration-150 ease-in-out bottom-5 right-5"
+    id="btn-back-to-top">
+    <svg aria-hidden="true" focusable="false" data-prefix="fas" class="w-4 h-4" role="img"
+      xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+      <path fill="currentColor"
+        d="M34.9 289.5l-22.2-22.2c-9.4-9.4-9.4-24.6 0-33.9L207 39c9.4-9.4 24.6-9.4 33.9 0l194.3 194.3c9.4 9.4 9.4 24.6 0 33.9L413 289.4c-9.5 9.5-25 9.3-34.3-.4L264 168.6V456c0 13.3-10.7 24-24 24h-32c-13.3 0-24-10.7-24-24V168.6L69.2 289.1c-9.3 9.8-24.8 10-34.3.4z">
+      </path>
+    </svg>
+  </button>
 
-         </a>
-          </nav>
+  <!-- Nav section -->
+  <header class="text-gray-100 body-font bg-dark">
+    <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+      <a href="./index.html" class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+        <img class="w-[200px]" src="./image/logo2.png" alt="img">
+      </a>
+      <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center cursor-pointer">
+        <a class="mr-5 hover:text-gray-400" href="./index.html">Home</a>
+        <a class="mr-5 hover:text-gray-400" href="./work.html">My Work</a>
+        <a class="mr-5 hover:text-gray-400" href="https://github.com/VidyaSagarMehar" target="_blank">Github</a>
+        <a class="mr-5 hover:text-gray-400" href="./image/2.jpg" download="VS-Resume"><button type="button">Download
+            Resume</button></a>
+
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- tailwind projects -->
+  <section class="">
+    <section class="py-6 sm:py-12 bg-dark text-gray-400">
+      <div class="container p-6 mx-auto space-y-8">
+        <div class="space-y-2 text-center">
+          <div>
+            <h1 class="text-4xl text-white mb-6">My work ✌️</h1>
+          </div>
+          <h2 class="text-3xl font-bold">TailwindCSS Projects</h2>
+          <p class="font-serif text-sm text-gray-600"></p>
         </div>
-    </header>
-
-      <!-- tailwind projects -->
-    <section class="">
-      <section class="py-6 sm:py-12 bg-dark text-gray-400">
-        <div class="container p-6 mx-auto space-y-8">
-          <div class="space-y-2 text-center">
-            <div><h1 class="text-4xl text-white mb-6">My work ✌️</h1></div>
-            <h2 class="text-3xl font-bold">TailwindCSS Projects</h2>
-            <p class="font-serif text-sm text-gray-600"></p>
-          </div>
-          <div class="grid grid-cols-2 gap-x-4 gap-y-8 md:grid-cols-4 lg:grid-cols-4">
-            <article class="flex flex-col bg-dark h-75">
-              <a target="_blank" rel="noopener noreferrer" href="https://rodedotcom.netlify.app/" aria-label="Te nulla oportere reprimique his dolorum">
-                <!-- <img alt="" class="object-cover w-full h-52 bg-dark0" src="https://source.unsplash.com/200x200/?fashion?1"> -->
-                <video src="./Video/rode.mp4"  muted autoplay loop playsinline class="w-full h-full" alt="./Video/rode.mp4"></video>
-              </a>
-              <div class="flex flex-col p-6">
-                <span class="flex justify-start gap-x-8">
-                <a target="_blank" rel="noopener noreferrer" href="https://rodedotcom.netlify.app/" class="text-sm tracking-wider uppercase hover:text-blue-400 text-blue-600">Live Link</a>
-                <a target="_blank" rel="noopener noreferrer" href="https://github.com/VidyaSagarMehar/Rode.com-clone-" class="text-sm tracking-wider uppercase hover:text-blue-400 text-blue-600">Github</a>
-                </span>
-                <h3 class="flex-1 py-2 text-lg font-semibold text-grey-100">Rode.com clone using TailwindCSS</h3>
-                <div class="flex flex-wrap justify-between space-x-2 text-xs text-gray-600">
-                  <span>Aug 18, 2022</span>
-                </div>
-              </div>
-            </article>
-            <article class="flex flex-col bg-dark h-75">
-              <a href="https://shopifyinclone.netlify.app/" target="_blank" rel="noopener noreferrer"  aria-label="Te nulla oportere reprimique his dolorum">
-                <!-- <img alt="" class="object-cover w-full h-52 bg-dark0" src="https://source.unsplash.com/200x200/?fashion?1"> -->
-                <video src="./Video/shopify.mp4"  muted autoplay loop playsinline class="w-full h-full" alt=""></video>
-              </a>
-              <div class="flex flex-col p-6">
-                <span class="flex justify-start gap-x-8">
-                <a target="_blank" target="_blank" rel="noopener noreferrer" target="_blank" href="https://shopifyinclone.netlify.app/" class="text-sm tracking-wider uppercase hover:text-blue-400 text-blue-600">Live Link</a>
-                <a target="_blank" target="_blank" rel="noopener noreferrer" href="https://github.com/VidyaSagarMehar/shopify.in-clone" class="text-sm tracking-wider uppercase hover:text-blue-400 text-blue-600">Github</a>
-                </span>
-                <h3 class="flex-1 py-2 text-lg font-semibold text-grey-100">Shopify clone using TailwindCSS</h3>
-                <div class="flex flex-wrap justify-between space-x-2 text-xs text-gray-600">
-                  <span>Aug 18, 2022</span>
-                </div>
-              </div>
-            </article>
-            <article class="flex flex-col bg-dark h-75">
-              <a target="_blank" rel="noopener noreferrer" href="https://paydotpaymecom.netlify.app/" aria-label="Te nulla oportere reprimique his dolorum">
-                <!-- <img alt="" class="object-cover w-full h-52 bg-dark0" src="https://source.unsplash.com/200x200/?fashion?1"> -->
-                <video src="./Video/paytmClone.mp4"  muted autoplay loop playsinline class="w-full h-full" alt=""></video>
-              </a>
-              <div class="flex flex-col p-6">
-                <span class="flex justify-start gap-x-8">
-                <a target="_blank" rel="noopener noreferrer" href="https://paydotpaymecom.netlify.app/" class="text-sm tracking-wider uppercase hover:text-blue-400 text-blue-600">Live Link</a>
-                <a target="_blank" rel="noopener noreferrer" href="https://github.com/VidyaSagarMehar/paytm.com-clone" class="text-sm tracking-wider uppercase hover:text-blue-400 text-blue-600">Github</a>
-                </span>
-                <h3 class="flex-1 py-2 text-lg font-semibold text-grey-100">Paytm clone using TailwindCSS</h3>
-                <div class="flex flex-wrap justify-between space-x-2 text-xs text-gray-600">
-                  <span>Aug 19, 2022</span>
-                </div>
-              </div>
-            </article>
-            <article class="flex flex-col bg-dark h-75">
-              <a target="_blank" rel="noopener noreferrer" href="https://pensilin.netlify.app/" aria-label="Te nulla oportere reprimique his dolorum">
-                <!-- <img alt="" class="object-cover w-full h-52 bg-dark0" src="https://source.unsplash.com/200x200/?fashion?1"> -->
-                <video src="./Video/pensils.mp4"  muted autoplay loop playsinline class="w-full h-full" alt=""></video>
-              </a>
-              <div class="flex flex-col p-6">
-                <span class="flex justify-start gap-x-8">
-                <a target="_blank" rel="noopener noreferrer" href="https://pensilin.netlify.app/" class="text-sm tracking-wider uppercase hover:text-blue-400 text-blue-600">Live Link</a>
-                <a target="_blank" rel="noopener noreferrer" href="https://github.com/VidyaSagarMehar/pensils.in-landing" class="text-sm tracking-wider uppercase hover:text-blue-400 text-blue-600">Github</a>
-                </span>
-                <h3 class="flex-1 py-2 text-lg font-semibold text-grey-100">Pensils for Hakathon, using TailwindCSS</h3>
-                <div class="flex flex-wrap justify-between space-x-2 text-xs text-gray-600">
-                  <span>Aug 25, 2022</span>
-                </div>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-    </section>
-      <!-- end -tailwind projects -->
-
-      <!-- HTML CSS section -->
-    <section class="text-gray-600">
-      <h2 class="text-3xl text-gray-400 text-center p-2 font-bold">HTML, CSS Projects</h2>
-      <div class="container px-5 py-6 mx-auto flex flex-wrap">
-        
-        <div class="lg:w-3/3 mx-auto">
-          <div class="flex flex-wrap w-full bg-gray-100 py-32 px-10 relative mb-4">
-            <img alt="gallery" class="w-full object-cover h-full object-center block opacity-80 absolute inset-0" src="./project image/Screenshot 15.png">
-
-            <a target="_blank" href="https://visual-designer-lco.netlify.app/" class="relative left-[35%]">
-              <button class="fillskewopen ">Live Link</button>
+        <div class="grid grid-cols-2 gap-x-4 gap-y-8 md:grid-cols-4 lg:grid-cols-4">
+          <article class="flex flex-col bg-dark h-75">
+            <a target="_blank" rel="noopener noreferrer" href="https://rodedotcom.netlify.app/"
+              aria-label="Te nulla oportere reprimique his dolorum">
+              <!-- <img alt="" class="object-cover w-full h-52 bg-dark0" src="https://source.unsplash.com/200x200/?fashion?1"> -->
+              <video src="./Video/rode.mp4" muted autoplay loop playsinline class="w-full h-full"
+                alt="./Video/rode.mp4"></video>
             </a>
-            <a target="_blank" href="https://github.com/VidyaSagarMehar/live-project-15-VisualDesigner" class="relative left-[35%]">
-              <button class="fillskewopen ">Github</button>
+            <div class="flex flex-col p-6">
+              <span class="flex justify-start gap-x-8">
+                <a target="_blank" rel="noopener noreferrer" href="https://rodedotcom.netlify.app/"
+                  class="text-sm tracking-wider uppercase hover:text-blue-400 text-blue-600">Live Link</a>
+                <a target="_blank" rel="noopener noreferrer" href="https://github.com/VidyaSagarMehar/Rode.com-clone-"
+                  class="text-sm tracking-wider uppercase hover:text-blue-400 text-blue-600">Github</a>
+              </span>
+              <h3 class="flex-1 py-2 text-lg font-semibold text-grey-100">Rode.com clone using TailwindCSS</h3>
+              <div class="flex flex-wrap justify-between space-x-2 text-xs text-gray-600">
+                <span>Aug 18, 2022</span>
+              </div>
+            </div>
+          </article>
+          <article class="flex flex-col bg-dark h-75">
+            <a href="https://shopifyinclone.netlify.app/" target="_blank" rel="noopener noreferrer"
+              aria-label="Te nulla oportere reprimique his dolorum">
+              <!-- <img alt="" class="object-cover w-full h-52 bg-dark0" src="https://source.unsplash.com/200x200/?fashion?1"> -->
+              <video src="./Video/shopify.mp4" muted autoplay loop playsinline class="w-full h-full" alt=""></video>
             </a>
-          </div>
-
-
-          <div class="flex flex-wrap -mx-2">
-
-            <div class="px-2 mx-auto w-3/3 py-2 md:py-0 md:w-1/3">
-              <div class="flex flex-wrap w-full bg-gray-100 sm:py-24 py-16 sm:px-10 px-6 relative">
-                <img alt="gallery" class="w-full object-cover h-full object-center block opacity-80 absolute inset-0" src="./project image/Screenshot 12.png">
-                <a target="_blank" href="https://business-expand.netlify.app/" class="relative ">
-                  <button class="fillskewopen ">Live Link</button>
-                </a>
-                <a target="_blank" href="https://github.com/VidyaSagarMehar/live-project-12-Business" class="relative ">
-                  <button class="fillskewopen  ">Github</button>
-                </a>
+            <div class="flex flex-col p-6">
+              <span class="flex justify-start gap-x-8">
+                <a target="_blank" target="_blank" rel="noopener noreferrer" target="_blank"
+                  href="https://shopifyinclone.netlify.app/"
+                  class="text-sm tracking-wider uppercase hover:text-blue-400 text-blue-600">Live Link</a>
+                <a target="_blank" target="_blank" rel="noopener noreferrer"
+                  href="https://github.com/VidyaSagarMehar/shopify.in-clone"
+                  class="text-sm tracking-wider uppercase hover:text-blue-400 text-blue-600">Github</a>
+              </span>
+              <h3 class="flex-1 py-2 text-lg font-semibold text-grey-100">Shopify clone using TailwindCSS</h3>
+              <div class="flex flex-wrap justify-between space-x-2 text-xs text-gray-600">
+                <span>Aug 18, 2022</span>
               </div>
             </div>
-
-            <div class="px-2 mx-auto w-3/3 py-2 md:py-0 md:w-1/3">
-              <div class="flex flex-wrap w-full bg-gray-100 sm:py-24 py-16 sm:px-10 px-6 relative">
-                <img alt="gallery" class="w-full object-cover h-full object-center block opacity-80 absolute inset-0" src="./project image/SAAS.png">
-                <a target="_blank" href="https://saas-provider.netlify.app/" class="relative ">
-                  <button class="fillskewopen ">Live Link</button>
-                </a>
-                <a target="_blank" href="https://github.com/VidyaSagarMehar/live-project-13-SAAS" class="relative ">
-                  <button class="fillskewopen  ">Github</button>
-                </a>
+          </article>
+          <article class="flex flex-col bg-dark h-75">
+            <a target="_blank" rel="noopener noreferrer" href="https://paydotpaymecom.netlify.app/"
+              aria-label="Te nulla oportere reprimique his dolorum">
+              <!-- <img alt="" class="object-cover w-full h-52 bg-dark0" src="https://source.unsplash.com/200x200/?fashion?1"> -->
+              <video src="./Video/paytmClone.mp4" muted autoplay loop playsinline class="w-full h-full" alt=""></video>
+            </a>
+            <div class="flex flex-col p-6">
+              <span class="flex justify-start gap-x-8">
+                <a target="_blank" rel="noopener noreferrer" href="https://paydotpaymecom.netlify.app/"
+                  class="text-sm tracking-wider uppercase hover:text-blue-400 text-blue-600">Live Link</a>
+                <a target="_blank" rel="noopener noreferrer" href="https://github.com/VidyaSagarMehar/paytm.com-clone"
+                  class="text-sm tracking-wider uppercase hover:text-blue-400 text-blue-600">Github</a>
+              </span>
+              <h3 class="flex-1 py-2 text-lg font-semibold text-grey-100">Paytm clone using TailwindCSS</h3>
+              <div class="flex flex-wrap justify-between space-x-2 text-xs text-gray-600">
+                <span>Aug 19, 2022</span>
               </div>
             </div>
-
-
-            
-            <div class="px-2 mx-auto w-3/3 py-2 md:py-0 md:w-1/3">
-              <div class="flex flex-wrap w-full bg-gray-100 sm:py-24 py-16 sm:px-10 px-6 relative">
-                <img alt="gallery" class="w-full object-cover h-full object-center block opacity-80 absolute inset-0" src="./project image/Screenshot 14.png">
-                <a target="_blank" href="https://live-creativity.netlify.app/" class="relative ">
-                  <button class="fillskewopen ">Live Link</button>
-                </a>
-                <a target="_blank" href="https://github.com/VidyaSagarMehar/live-project-14-Creativity" class="relative ">
-                  <button class="fillskewopen  ">Github</button>
-                </a>
+          </article>
+          <article class="flex flex-col bg-dark h-75">
+            <a target="_blank" rel="noopener noreferrer" href="https://pensilin.netlify.app/"
+              aria-label="Te nulla oportere reprimique his dolorum">
+              <!-- <img alt="" class="object-cover w-full h-52 bg-dark0" src="https://source.unsplash.com/200x200/?fashion?1"> -->
+              <video src="./Video/pensils.mp4" muted autoplay loop playsinline class="w-full h-full" alt=""></video>
+            </a>
+            <div class="flex flex-col p-6">
+              <span class="flex justify-start gap-x-8">
+                <a target="_blank" rel="noopener noreferrer" href="https://pensilin.netlify.app/"
+                  class="text-sm tracking-wider uppercase hover:text-blue-400 text-blue-600">Live Link</a>
+                <a target="_blank" rel="noopener noreferrer"
+                  href="https://github.com/VidyaSagarMehar/pensils.in-landing"
+                  class="text-sm tracking-wider uppercase hover:text-blue-400 text-blue-600">Github</a>
+              </span>
+              <h3 class="flex-1 py-2 text-lg font-semibold text-grey-100">Pensils for Hakathon, using TailwindCSS</h3>
+              <div class="flex flex-wrap justify-between space-x-2 text-xs text-gray-600">
+                <span>Aug 25, 2022</span>
               </div>
             </div>
-
-            <div class="px-2 mx-auto w-3/3 py-2 md:py-4 md:w-1/3">
-              <div class="flex flex-wrap w-full bg-gray-100 sm:py-24 py-16 sm:px-10 px-6 relative">
-                <img alt="gallery" class="w-full object-cover h-full object-center block opacity-80 absolute inset-0" src="./project image/Screenshot 11.png">
-                <a target="_blank" href="https://hosting-services.netlify.app/" class="relative ">
-                  <button class="fillskewopen ">Live Link</button>
-                </a>
-                <a target="_blank" href="https://github.com/VidyaSagarMehar/live-project-14-Creativity" class="relative ">
-                  <button class="fillskewopen  ">Github</button>
-                </a>
-              </div>
-            </div>
-
-            <div class="px-2 mx-auto w-3/3 py-2 md:py-4 md:w-1/3">
-              <div class="flex flex-wrap w-full bg-gray-100 sm:py-24 py-16 sm:px-10 px-6 relative">
-                <img alt="gallery" class="w-full object-cover h-full object-center block opacity-80 absolute inset-0" src="./project image/Screenshot 10.png">
-                <a target="_blank" href="https://interior-go-with.netlify.app/" class="relative ">
-                  <button class="fillskewopen ">Live Link</button>
-                </a>
-                <a target="_blank" href="https://github.com/VidyaSagarMehar/live-project-10-Interior" class="relative ">
-                  <button class="fillskewopen  ">Github</button>
-                </a>
-              </div>
-            </div>
-
-            <div class="px-2 mx-auto w-3/3 py-2 md:py-4 md:w-1/3">
-              <div class="flex flex-wrap w-full bg-gray-100 sm:py-24 py-16 sm:px-10 px-6 relative">
-                <img alt="gallery" class="w-full object-cover h-full object-center block opacity-80 absolute inset-0" src="./project image/Screenshot 9.png">
-                <a target="_blank" href="https://apis-bulit.netlify.app/" class="relative ">
-                  <button class="fillskewopen ">Live Link</button>
-                </a>
-                <a target="_blank" href="https://github.com/VidyaSagarMehar/live-project-09-API" class="relative ">
-                  <button class="fillskewopen  ">Github</button>
-                </a>
-              </div>
-            </div>
-
-            
-          </div>
+          </article>
         </div>
       </div>
     </section>
-      <!--end-  HTML CSS section -->
+  </section>
+  <!-- end -tailwind projects -->
+
+  <!-- Javascript Project -->
+  <section>
+    <div class="space-y-2 text-center">
+      <h2 class="text-3xl font-bold text-gray-400">JavaScript Projects</h2>
+    </div>
+    <!-- Container for demo purpose -->
+    <div class="container my-16 px-6 mx-auto">
+      <!-- Section: Design Block -->
+      <section class="mb-32 text-gray-800 text-center">
+        <div class="grid lg:grid-cols-4 grid-cols-2 gap-6 xl:gap-x-12">
+          <!-- first elelmet starts -->
+          <div class="mb-6 lg:mb-0">
+            <div>
+              <div class="relative overflow-hidden bg-no-repeat t bg-cover ripple shadow-lg rounded-lg mb-6"
+                data-mdb-ripple="true" data-mdb-ripple-color="light">
+                <img src="./project image/randomQuote.png" class="w-full" height="full" alt="image" />
+                <a href="#!">
+                </a>
+              </div>
+              <a href="https://github.com/VidyaSagarMehar/randomQuote_JS" target="_blank">
+                <button type="button"
+                  class="inline-block m-2 px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">Github</button>
+              </a>
+              <a href="https://randomquotejs.netlify.app/" target="_blank">
+                <button type="button"
+                  class="inline-block m-2 px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">Demo</button>
+              </a>
+
+
+
+              <h5 class="text-lg font-bold text-gray-400">Random Quotes Generator</h5>
+              <p class="text-gray-500">
+                <small>Published 28.Sep.2022</small>
+              </p>
+            </div>
+          </div>
+
+          <!-- second elelmet ends -->
+          <div>
+            <div
+              class="relative overflow-hidden bg-no-repeat bg-cover relative overflow-hidden bg-no-repeat bg-cover ripple shadow-lg rounded-lg mb-6"
+              data-mdb-ripple="true" data-mdb-ripple-color="light">
+              <img src="./project image/clipboard.png" class="400px" height="200px" alt="image" />
+              <a href="#!">
+              </a>
+            </div>
+            <a href="https://github.com/VidyaSagarMehar/ClipboardApp_js_proj03" target="_blank">
+              <button type="button"
+                class="inline-block m-2 px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">Github</button>
+            </a>
+            <a href="https://clipboardwebapp.netlify.app/" target="_blank">
+              <button type="button"
+                class="inline-block m-2 px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">Demo</button>
+            </a>
+
+
+            <h5 class="text-lg font-bold text-gray-400">Clipboard App</h5>
+            <p class="text-gray-500">
+              <small>Published 03.Oct.2022</small>
+            </p>
+          </div>
+
+          <!-- Third element -->
+          <div>
+            <div
+              class="relative overflow-hidden bg-no-repeat bg-cover relative overflow-hidden bg-no-repeat bg-cover ripple shadow-lg rounded-lg mb-6"
+              data-mdb-ripple="true" data-mdb-ripple-color="light">
+              <img src="./project image/themeChanger.png" class="400px" height="200px" alt="image" />
+              <a href="#!">
+              </a>
+            </div>
+            <a href="https://github.com/VidyaSagarMehar/themeChanger_JSproj02" target="_blank">
+              <button type="button"
+                class="inline-block m-2 px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">Github</button>
+            </a>
+            <a href="https://modechanger.netlify.app/" target="_blank">
+              <button type="button"
+                class="inline-block m-2 px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">Demo</button>
+            </a>
+
+
+            <h5 class="text-lg font-bold text-gray-400">Theme Changer App</h5>
+            <p class="text-gray-500">
+              <small>Published 29.Sep.2022</small>
+            </p>
+          </div>
+          <!-- Fourth element -->
+          <div>
+            <div
+              class="relative overflow-hidden bg-no-repeat bg-cover relative overflow-hidden bg-no-repeat bg-cover ripple shadow-lg rounded-lg mb-6"
+              data-mdb-ripple="true" data-mdb-ripple-color="light">
+              <img src="./project image/bookmark.png" class="400px" height="200px" alt="image" />
+              <a href="#!">
+              </a>
+            </div>
+            <a href="https://github.com/VidyaSagarMehar/BookmarkApp_JS_proj07" target="_blank">
+              <button type="button"
+                class="inline-block m-2 px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">Github</button>
+            </a>
+            <a href="https://bookmarkwebapp.netlify.app/" target="_blank">
+              <button type="button"
+                class="inline-block m-2 px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">Demo</button>
+            </a>
+
+
+            <h5 class="text-lg font-bold text-gray-400">Bookmarkr App</h5>
+            <p class="text-gray-500">
+              <small>Published 10.Oct.2022</small>
+            </p>
+          </div>
+
+          <!-- Fifth element -->
+          <div>
+            <div
+              class="relative overflow-hidden bg-no-repeat bg-cover relative overflow-hidden bg-no-repeat bg-cover ripple shadow-lg rounded-lg mb-6"
+              data-mdb-ripple="true" data-mdb-ripple-color="light">
+              <img src="./project image/todojs.png" class="400px" height="200px" alt="image" />
+              <a href="#!">
+              </a>
+            </div>
+            <a href="https://github.com/VidyaSagarMehar/TODOapp_JS_proj06" target="_blank">
+              <button type="button"
+                class="inline-block m-2 px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">Github</button>
+            </a>
+            <a href="https://todoaddlist.netlify.app/" target="_blank">
+              <button type="button"
+                class="inline-block m-2 px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">Demo</button>
+            </a>
+            <h5 class="text-lg font-bold text-gray-400">Todo App</h5>
+            <p class="text-gray-500">
+              <small>Published 06.Oct.2022</small>
+            </p>
+          </div>
+
+          <!-- Sixth element -->
+          <div>
+            <div
+              class="relative overflow-hidden bg-no-repeat bg-cover relative overflow-hidden bg-no-repeat bg-cover ripple shadow-lg rounded-lg mb-6"
+              data-mdb-ripple="true" data-mdb-ripple-color="light">
+              <img src="./project image/accordianApp.png" class="400px" height="200px" alt="image" />
+              <a href="#!">
+              </a>
+            </div>
+            <a href="https://github.com/VidyaSagarMehar/Accordion_JS_proj" target="_blank">
+              <button type="button"
+                class="inline-block m-2 px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">Github</button>
+            </a>
+            <a href="https://accordion-js-proj.vercel.app/" target="_blank">
+              <button type="button"
+                class="inline-block m-2 px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">Demo</button>
+            </a>
+            <h5 class="text-lg font-bold text-gray-400">Accordian App</h5>
+            <p class="text-gray-500">
+              <small>Published 25.Nov.2022</small>
+            </p>
+          </div>
+
+          <!-- Seventh element -->
+          <div>
+            <div
+              class="relative overflow-hidden bg-no-repeat bg-cover relative overflow-hidden bg-no-repeat bg-cover ripple shadow-lg rounded-lg mb-6"
+              data-mdb-ripple="true" data-mdb-ripple-color="light">
+              <img src="./project image/agecalculator.png" class="400px" height="200px" alt="image" />
+              <a href="#!">
+              </a>
+            </div>
+            <a href="https://github.com/VidyaSagarMehar/AgeCalculator_JS_proj08" target="_blank">
+              <button type="button"
+                class="inline-block m-2 px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">Github</button>
+            </a>
+            <a href="https://agecalculatorwebapp.netlify.app/" target="_blank">
+              <button type="button"
+                class="inline-block m-2 px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">Demo</button>
+            </a>
+            <h5 class="text-lg font-bold text-gray-400">Age Calculator App</h5>
+            <p class="text-gray-500">
+              <small>Published 10.Oct.2022</small>
+            </p>
+          </div>
+
+          <!-- Eighth element -->
+          <div>
+            <div
+              class="relative overflow-hidden bg-no-repeat bg-cover relative overflow-hidden bg-no-repeat bg-cover ripple shadow-lg rounded-lg mb-6"
+              data-mdb-ripple="true" data-mdb-ripple-color="light">
+              <img src="./project image/nameConversion.png" class="400px" height="200px" alt="image" />
+              <a href="#!">
+              </a>
+            </div>
+            <a href="https://github.com/VidyaSagarMehar/NameConversion_js_proj14" target="_blank">
+              <button type="button"
+                class="inline-block m-2 px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">Github</button>
+            </a>
+            <a href="https://nameconversionwebapp.netlify.app/" target="_blank">
+              <button type="button"
+                class="inline-block m-2 px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">Demo</button>
+            </a>
+            <h5 class="text-lg font-bold text-gray-400">Name Conversion App</h5>
+            <p class="text-gray-500">
+              <small>Published 10.Oct.2022</small>
+            </p>
+          </div>
+
+        </div>
+      </section>
+    </div>
+  </section>
+  <!-- End of JavaScript projects -->
+
+  <!-- HTML CSS section -->
+  <section class="text-gray-600">
+    <h2 class="text-3xl text-gray-400 text-center p-2 font-bold">HTML, CSS Projects</h2>
+    <div class="container px-5 py-6 mx-auto flex flex-wrap">
+
+      <div class="lg:w-3/3 mx-auto">
+        <div class="flex flex-wrap w-full bg-gray-100 py-32 px-10 relative mb-4">
+          <img alt="gallery" class="w-full object-cover h-full object-center block opacity-80 absolute inset-0"
+            src="./project image/Screenshot 15.png">
+
+          <a target="_blank" href="https://visual-designer-lco.netlify.app/" class="relative left-[35%]">
+            <button class="fillskewopen ">Live Link</button>
+          </a>
+          <a target="_blank" href="https://github.com/VidyaSagarMehar/live-project-15-VisualDesigner"
+            class="relative left-[35%]">
+            <button class="fillskewopen ">Github</button>
+          </a>
+        </div>
+
+
+        <div class="flex flex-wrap -mx-2">
+
+          <div class="px-2 mx-auto w-3/3 py-2 md:py-0 md:w-1/3">
+            <div class="flex flex-wrap w-full bg-gray-100 sm:py-24 py-16 sm:px-10 px-6 relative">
+              <img alt="gallery" class="w-full object-cover h-full object-center block opacity-80 absolute inset-0"
+                src="./project image/Screenshot 12.png">
+              <a target="_blank" href="https://business-expand.netlify.app/" class="relative ">
+                <button class="fillskewopen ">Live Link</button>
+              </a>
+              <a target="_blank" href="https://github.com/VidyaSagarMehar/live-project-12-Business" class="relative ">
+                <button class="fillskewopen  ">Github</button>
+              </a>
+            </div>
+          </div>
+
+          <div class="px-2 mx-auto w-3/3 py-2 md:py-0 md:w-1/3">
+            <div class="flex flex-wrap w-full bg-gray-100 sm:py-24 py-16 sm:px-10 px-6 relative">
+              <img alt="gallery" class="w-full object-cover h-full object-center block opacity-80 absolute inset-0"
+                src="./project image/SAAS.png">
+              <a target="_blank" href="https://saas-provider.netlify.app/" class="relative ">
+                <button class="fillskewopen ">Live Link</button>
+              </a>
+              <a target="_blank" href="https://github.com/VidyaSagarMehar/live-project-13-SAAS" class="relative ">
+                <button class="fillskewopen  ">Github</button>
+              </a>
+            </div>
+          </div>
+
+
+
+          <div class="px-2 mx-auto w-3/3 py-2 md:py-0 md:w-1/3">
+            <div class="flex flex-wrap w-full bg-gray-100 sm:py-24 py-16 sm:px-10 px-6 relative">
+              <img alt="gallery" class="w-full object-cover h-full object-center block opacity-80 absolute inset-0"
+                src="./project image/Screenshot 14.png">
+              <a target="_blank" href="https://live-creativity.netlify.app/" class="relative ">
+                <button class="fillskewopen ">Live Link</button>
+              </a>
+              <a target="_blank" href="https://github.com/VidyaSagarMehar/live-project-14-Creativity" class="relative ">
+                <button class="fillskewopen  ">Github</button>
+              </a>
+            </div>
+          </div>
+
+          <div class="px-2 mx-auto w-3/3 py-2 md:py-4 md:w-1/3">
+            <div class="flex flex-wrap w-full bg-gray-100 sm:py-24 py-16 sm:px-10 px-6 relative">
+              <img alt="gallery" class="w-full object-cover h-full object-center block opacity-80 absolute inset-0"
+                src="./project image/Screenshot 11.png">
+              <a target="_blank" href="https://hosting-services.netlify.app/" class="relative ">
+                <button class="fillskewopen ">Live Link</button>
+              </a>
+              <a target="_blank" href="https://github.com/VidyaSagarMehar/live-project-14-Creativity" class="relative ">
+                <button class="fillskewopen  ">Github</button>
+              </a>
+            </div>
+          </div>
+
+          <div class="px-2 mx-auto w-3/3 py-2 md:py-4 md:w-1/3">
+            <div class="flex flex-wrap w-full bg-gray-100 sm:py-24 py-16 sm:px-10 px-6 relative">
+              <img alt="gallery" class="w-full object-cover h-full object-center block opacity-80 absolute inset-0"
+                src="./project image/Screenshot 10.png">
+              <a target="_blank" href="https://interior-go-with.netlify.app/" class="relative ">
+                <button class="fillskewopen ">Live Link</button>
+              </a>
+              <a target="_blank" href="https://github.com/VidyaSagarMehar/live-project-10-Interior" class="relative ">
+                <button class="fillskewopen  ">Github</button>
+              </a>
+            </div>
+          </div>
+
+          <div class="px-2 mx-auto w-3/3 py-2 md:py-4 md:w-1/3">
+            <div class="flex flex-wrap w-full bg-gray-100 sm:py-24 py-16 sm:px-10 px-6 relative">
+              <img alt="gallery" class="w-full object-cover h-full object-center block opacity-80 absolute inset-0"
+                src="./project image/Screenshot 9.png">
+              <a target="_blank" href="https://apis-bulit.netlify.app/" class="relative ">
+                <button class="fillskewopen ">Live Link</button>
+              </a>
+              <a target="_blank" href="https://github.com/VidyaSagarMehar/live-project-09-API" class="relative ">
+                <button class="fillskewopen  ">Github</button>
+              </a>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--end-  HTML CSS section -->
+  <script src="./script.js"></script>
 
 </body>
+
 </html>
